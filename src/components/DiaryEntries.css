@@ -1,0 +1,120 @@
+.diary-entries {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.diary-entries h2 {
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 1.5rem;
+}
+
+.no-entries {
+  text-align: center;
+  padding: 40px 20px;
+  color: #32ef11;
+  font-size: 1.1rem;
+}
+
+.entries-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.entries-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.entries-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.entries-list::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.entries-list::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+.entry-card {
+  background: #f9f9f9;
+  border-left: 4px solid #667eea;
+  padding: 15px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+.entry-card:hover {
+  background: #f0f4ff;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.1);
+}
+
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.entry-date-mood {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.entry-date {
+  font-weight: 600;
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.entry-mood {
+  font-size: 1.5rem;
+}
+
+.delete-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background: #ff5252;
+  transform: scale(1.1);
+}
+
+.entry-content {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  word-wrap: break-word;
+}
+
+.entry-time {
+  font-size: 0.8rem;
+  color: #999;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .entries-list {
+    max-height: none;
+  }
+}

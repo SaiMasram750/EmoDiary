@@ -1,0 +1,46 @@
+.burnout-calculator {
+  margin: 2rem auto;
+  padding: 1.5rem;
+  max-width: 600px;
+  background: #f9f9f9; /* soft neutral background */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.burnout-calculator h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.burnout-calculator label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.burnout-calculator input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.burnout-calculator button {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background: #98FB98; /* mint green */
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.burnout-calculator button:hover {
+  background: #69976E; /* darker green */
+  color: white;
+}
